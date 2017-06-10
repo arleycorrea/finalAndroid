@@ -1,5 +1,6 @@
 package apps.proyecto.funec.finalarley.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 
 import apps.proyecto.funec.finalarley.MainActivity;
 import apps.proyecto.funec.finalarley.R;
+import apps.proyecto.funec.finalarley.SettingsActivity;
 
 
 public class InboxFragment extends Fragment {
@@ -29,6 +31,9 @@ public class InboxFragment extends Fragment {
         buttonChangeText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Intent intent = new Intent(getActivity(), SettingsActivity.class);
+                startActivity(intent);
 
                 textViewInboxFragment.setText("BIENVENIDO A Q10");
                 textViewInboxFragment.setTextColor(getResources().getColor(R.color.md_yellow_800));

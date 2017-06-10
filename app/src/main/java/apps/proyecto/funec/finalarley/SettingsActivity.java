@@ -20,9 +20,9 @@ public class SettingsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
 
 
-        WebView view = (WebView) findViewById(R.id.settings);
+        WebView view = (WebView) findViewById(R.id.inbox);
         view.setWebViewClient(new WebViewClient());
-        view.loadUrl("http://virtual.uniremingtonmanizales.edu.co/moodle/");
+        view.loadUrl("https://www.q10academico.com/login?ReturnUrl=/&aplentId=a2e25504-9d7b-4e4e-861a-5f015f373d8f");
 
 
 
