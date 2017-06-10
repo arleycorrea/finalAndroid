@@ -22,7 +22,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         WebView view = (WebView) findViewById(R.id.settings);
         view.setWebViewClient(new WebViewClient());
-        view.loadUrl("http://www.uniremington.edu.co/manizales/");
+        view.loadUrl("http://virtual.uniremingtonmanizales.edu.co/moodle/");
 
 
 
